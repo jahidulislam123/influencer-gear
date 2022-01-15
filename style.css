@@ -78,6 +78,52 @@ ul li a {
 
 }
 
+.container-1-image {
+
+
+    position: relative;
+    animation-name: examples;
+    animation-duration: 8s;
+
+}
+
+@keyframes examples {
+    0% {
+
+        left: 0px;
+        top: 0px;
+
+    }
+
+    25% {
+
+        left: 200px;
+        top: 0px;
+
+    }
+
+    50% {
+
+        left: 200px;
+        top: 200px;
+
+    }
+
+    75% {
+
+        left: 0px;
+        top: 200px;
+
+    }
+
+    100% {
+
+        left: 0px;
+        top: 0px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 
 
 .container-1-info {
@@ -258,49 +304,105 @@ footer {
     color: white;
 }
 
+@media screen and (max-width:600px) {
 
-.container-1-image {
 
 
-    position: relative;
-    animation-name: examples;
-    animation-duration: 8s;
+    nav,
+    .container-1,
+    .extra {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-nav ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 18px;
+    }
+
+    nav .left-nav {
+        margin-bottom: 50px;
+        margin-top: 0px;
+
+    }
+
+
+
+    .container-1-info {
+        width: 50%;
+    }
+
+    .container-1-image img {
+        width: 90%;
+    }
+
+    .collection {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .extra-image img {
+
+        width: 250px;
+
+    }
+
+
 
 }
 
-@keyframes examples {
-    0% {
+@media only screen and (min-width:601px) and (max-width:992px) {
 
-        left: 0px;
-        top: 0px;
+
+
+    nav,
+    .container-1,
+        {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 18px;
+    }
+
+    nav .left-nav {
+        margin-bottom: 50px;
+        margin-top: 0px;
 
     }
 
-    25% {
 
-        left: 200px;
-        top: 0px;
+
+    .container-1-info {
+        width: 50%;
+    }
+
+    .container-1-image img {
+        width: 90%;
+    }
+
+    .collection {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+
 
     }
 
-    50% {
+    .extra-image img {
 
-        left: 200px;
-        top: 200px;
-
-    }
-
-    75% {
-
-        left: 0px;
-        top: 200px;
+        width: 250px;
 
     }
 
-    100% {
 
-        left: 0px;
-        top: 0px;
-        -webkit-transform: rotate(360deg);
-    }
+
 }
