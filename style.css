@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 body {
     font-family: 'poppins', sans-serif;
 }
@@ -71,7 +75,10 @@ ul li a {
     margin-right: 120px;
     margin-top: 146px;
 
+
 }
+
+
 
 .container-1-info {
     width: 582px;
@@ -249,4 +256,51 @@ footer {
     padding-right: 6px;
     padding-left: 6px;
     color: white;
+}
+
+
+.container-1-image {
+
+
+    position: relative;
+    animation-name: examples;
+    animation-duration: 8s;
+
+}
+
+@keyframes examples {
+    0% {
+
+        left: 0px;
+        top: 0px;
+
+    }
+
+    25% {
+
+        left: 200px;
+        top: 0px;
+
+    }
+
+    50% {
+
+        left: 200px;
+        top: 200px;
+
+    }
+
+    75% {
+
+        left: 0px;
+        top: 200px;
+
+    }
+
+    100% {
+
+        left: 0px;
+        top: 0px;
+        -webkit-transform: rotate(360deg);
+    }
 }
