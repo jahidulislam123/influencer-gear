@@ -218,3 +218,14 @@ p {
     left: 45px;
 
 }
+
+/* footer start */
+footer {
+    background-color: #080e1d;
+    ;
+    text-align: center;
+    color: white;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin-top: 23px;
+}
